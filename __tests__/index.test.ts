@@ -1,6 +1,7 @@
 import { it, expect } from 'vitest'
-import { add } from '../src';
+import { SearchAgent } from '../src';
 
-it('add', () => {
-  expect(add(1, 2)).toBe(3);
+it('SearchAgent', () => {
+  const searchAgent = new SearchAgent({});
+  expect(searchAgent.status()).toBe('idle');
 });
